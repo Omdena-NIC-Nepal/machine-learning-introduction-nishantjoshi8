@@ -1,0 +1,91 @@
+KeyError                                  Traceback (most recent call last)
+Cell In[31], line 23
+     20 y = data['Price']  # Target variable
+     22 # Load the trained model
+---> 23 model = load_model('../models/linear_regression_model.pkl')  
+
+File c:\Users\User\Desktop\assignment\ml-beginner-project-linear-regression\machine-learning-introduction-nishantjoshi8\.github\Predicting-House-Prices-Using-Linear-Regression\src\model.py:33, in load_model(filepath)
+     31 def load_model(filepath):
+     32     import joblib
+---> 33     return joblib.load(filepath)
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:658, in load(filename, mmap_mode)
+    652             if isinstance(fobj, str):
+    653                 # if the returned file object is a string, this means we
+    654                 # try to load a pickle file generated with an version of
+    655                 # Joblib so we load it with joblib compatibility function.
+    656                 return load_compatibility(fobj)
+--> 658             obj = _unpickle(fobj, filename, mmap_mode)
+    659 return obj
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:577, in _unpickle(fobj, filename, mmap_mode)
+    575 obj = None
+    576 try:
+--> 577     obj = unpickler.load()
+...
+-> 1255         dispatch[key[0]](self)
+   1256 except _Stop as stopinst:
+   1257     return stopinst.value
+
+KeyError: 102
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...KeyError                                  Traceback (most recent call last)
+Cell In[31], line 23
+     20 y = data['Price']  # Target variable
+     22 # Load the trained model
+---> 23 model = load_model('../models/linear_regression_model.pkl')  
+
+File c:\Users\User\Desktop\assignment\ml-beginner-project-linear-regression\machine-learning-introduction-nishantjoshi8\.github\Predicting-House-Prices-Using-Linear-Regression\src\model.py:33, in load_model(filepath)
+     31 def load_model(filepath):
+     32     import joblib
+---> 33     return joblib.load(filepath)
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:658, in load(filename, mmap_mode)
+    652             if isinstance(fobj, str):
+    653                 # if the returned file object is a string, this means we
+    654                 # try to load a pickle file generated with an version of
+    655                 # Joblib so we load it with joblib compatibility function.
+    656                 return load_compatibility(fobj)
+--> 658             obj = _unpickle(fobj, filename, mmap_mode)
+    659 return obj
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:577, in _unpickle(fobj, filename, mmap_mode)
+    575 obj = None
+    576 try:
+--> 577     obj = unpickler.load()
+...
+-> 1255         dispatch[key[0]](self)
+   1256 except _Stop as stopinst:
+   1257     return stopinst.value
+
+KeyError: 102
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...KeyError                                  Traceback (most recent call last)
+Cell In[31], line 23
+     20 y = data['Price']  # Target variable
+     22 # Load the trained model
+---> 23 model = load_model('../models/linear_regression_model.pkl')  
+
+File c:\Users\User\Desktop\assignment\ml-beginner-project-linear-regression\machine-learning-introduction-nishantjoshi8\.github\Predicting-House-Prices-Using-Linear-Regression\src\model.py:33, in load_model(filepath)
+     31 def load_model(filepath):
+     32     import joblib
+---> 33     return joblib.load(filepath)
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:658, in load(filename, mmap_mode)
+    652             if isinstance(fobj, str):
+    653                 # if the returned file object is a string, this means we
+    654                 # try to load a pickle file generated with an version of
+    655                 # Joblib so we load it with joblib compatibility function.
+    656                 return load_compatibility(fobj)
+--> 658             obj = _unpickle(fobj, filename, mmap_mode)
+    659 return obj
+
+File d:\anaconda\Lib\site-packages\joblib\numpy_pickle.py:577, in _unpickle(fobj, filename, mmap_mode)
+    575 obj = None
+    576 try:
+--> 577     obj = unpickler.load()
+...
+-> 1255         dispatch[key[0]](self)
+   1256 except _Stop as stopinst:
+   1257     return stopinst.value
+
+KeyError: 102
+Output is truncated. View as a scrollable element or open in a text editor. Adjust cell output settings...
